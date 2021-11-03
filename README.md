@@ -14,13 +14,6 @@ This repository is created for [University of Melbourne](https://www.unimelb.edu
 
 **Unity 3D Game Development** 
 
----
-
-## Code Access Link and Master Branches
- |Master Branch | Download  |
-| ---- | ---- |
- |https://bit.ly/3nnP5AX | https://bit.ly/3EteNej |
-
 
 ---
 
@@ -103,23 +96,19 @@ Additional Details of Character and Object design highlights are as follows:
 - **Protagonist**: Our protagonist is a knight 
 - **Enemies**:
   - **Low-Level Enemies**: 
-   - <img src="/Gifs/Slime.png" width="100"/>
    - **Slimes**: One of the most basic enemies in the game, and of course one of the most budget ones becaue it is a free and common asset on the asset store. It has two basic attack animation which are pridictable on their own and its appearance is not intimidating, therefore, it fits our expection of a early game enemy perfectly.
-
-   - <img src="/Gifs/Turtle.png" width="100"/>
    - **Turtles**: Similar to Slimes, due to the fact that they are included in the same free asset pack and its animation and appearance are all newbie-friendly as well, we design it as one of the early game enemies. 
-   - <img src="/Gifs/Grunt.png" width="100"/>
    - **Grunts**: Grunts are relatively strong enemies but not as strong as the elite ones and the bosses. It has more complicated attack and movement abilities but the player can still manage to beat it if the player can properlyu utilise the roll dodge. This is a great enemy for teaching player about the core mechanics of the combat system in the game.
-   - **Elite Enemies**: <img src="/Gifs/Archer.png" width="100"/><img src="/Gifs/Cannon.png" width="100"/><img src="/Gifs/Cannon1.png" width="100"/><img src="/Gifs/Knight.png" width="100"/><img src="/Gifs/Knight1.png" width="100"/><img src="/Gifs/Mage.png" width="100"/><img src="/Gifs/Mage1.png" width="100"/><img src="/Gifs/Soldier.png" width="100"/><img src="/Gifs/Soldier1.png" width="100"/>There many more difficult enemies (with better rewards of course) in the world, including Archer, Knight, Mage, Soldier, etc. And they all have advanced versions of them (with scarlet skins!). These dangerous enemies are often guarding for powerful weapons or items. Make sure your character is strong enough before challenging them!
+   - **Elite Enemies**: There many more difficult enemies (with better rewards of course) in the world, including Archer, Knight, Mage, Soldier, etc. And they all have advanced versions of them (with scarlet skins!). These dangerous enemies are often guarding for powerful weapons or items. Make sure your character is strong enough before challenging them!
 
   - **High-Level Bosses (Elemental Beasts)**:
-    - **Fiery Fiend**: <img src="/Gifs/Fire.png" width="100"/>The volcano has been simmering for as long as the Fiery Fiend has been alive, an angry Beast that thrives off heaven's charcoal with its rumbling anger so loud that anyone nearing the Fire Arena immediately flees for their lives on horseback. Fuelled by the rolling rage of Fire, the Fiery Fiend is in a constant state of fury and ready to burn anything or anyone that dares to come close. 
+    - **Fiery Fiend**: The volcano has been simmering for as long as the Fiery Fiend has been alive, an angry Beast that thrives off heaven's charcoal with its rumbling anger so loud that anyone nearing the Fire Arena immediately flees for their lives on horseback. Fuelled by the rolling rage of Fire, the Fiery Fiend is in a constant state of fury and ready to burn anything or anyone that dares to come close. 
 
-    - **Glacier Giant**: <img src="/Gifs/Ice.png" width="100"/>Soulless. Colorless. A world of white births and nurtures the Glacier Giant. The seas are frozen mid-wave, the rains are frozen mid-drop, only a handful of greenery is allowed the chance of life by the Glacier Giant. Powered by the ever-present cold that commoners see as their nemesis, the Glacier Giant unhesitantly freezes any earthly matter that enters its biome. 
+    - **Glacier Giant**: Soulless. Colorless. A world of white births and nurtures the Glacier Giant. The seas are frozen mid-wave, the rains are frozen mid-drop, only a handful of greenery is allowed the chance of life by the Glacier Giant. Powered by the ever-present cold that commoners see as their nemesis, the Glacier Giant unhesitantly freezes any earthly matter that enters its biome. 
 
-    - **Tree Titan**: <img src="/Gifs/Tree.png" width="100"/>Superficially harmless, even a calming bliss on the surface, is the forest biome ruled by the Tree Titan. The ever-giving nature of this biome gifted the Tree Titan with incredible vitality and endless lifecycles. Do not be fooled by the disguise of Tree Titan and the forest biome, the player must defeat it for the valuable power-up of Health Regeneration.
+    - **Tree Titan**: Superficially harmless, even a calming bliss on the surface, is the forest biome ruled by the Tree Titan. The ever-giving nature of this biome gifted the Tree Titan with incredible vitality and endless lifecycles. Do not be fooled by the disguise of Tree Titan and the forest biome, the player must defeat it for the valuable power-up of Health Regeneration.
 
-    - **Stone Savage**: <img src="/Gifs/Stone.png" width="100"/>Stone biome speaks of permanence, of the tombstone of countless souls that died in their hopes of defeating the Stone Savage. Protected by an unbreakable layer of stones, the Savage Beast is seemingly impossible to defeat with its power of reflecting the damage back to its opponents. Only the brave has a chance against such a mighty being.
+    - **Stone Savage**: Stone biome speaks of permanence, of the tombstone of countless souls that died in their hopes of defeating the Stone Savage. Protected by an unbreakable layer of stones, the Savage Beast is seemingly impossible to defeat with its power of reflecting the damage back to its opponents. Only the brave has a chance against such a mighty being.
 
 - **Supplies**: There are consumables for temporal restoration of the character status, such as health packs and energy drinks. There are also consumables that can permenantly improve the character status, such as essence that drops from the defeated enemies. The more difficult an enemy is, the better the consubales it would probably drop after it is defeat. We design these items as minor objectives and rewards for the player to explore the world. 
 
