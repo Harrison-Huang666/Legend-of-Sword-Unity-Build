@@ -1,0 +1,537 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <div><p><a href="https://classroom.github.com/online_ide?assignment_repo_id=445323&amp;assignment_repo_type=GroupAssignmentRepo"><img src="https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg" alt="Open in Visual Studio Code"></a><br>
+<img src="https://images.unsplash.com/photo-1501776192086-602832fae6e6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"></p>
+<h1 class="mume-header" id="img-srchttpscdnfreebiesupplycomlogoslarge2xthe-university-of-melbourne-logo-svg-vectorsvg-width15-alignleft-comp30022-group-project-team-4399"><img src="https://cdn.freebiesupply.com/logos/large/2x/the-university-of-melbourne-logo-svg-vector.svg" width="15%" align="left"> COMP30022 Group Project Team 4399</h1>
+
+<p>This repository is created for <a href="https://www.unimelb.edu.au">University of Melbourne</a> <a href="https://handbook.unimelb.edu.au/search">COMP30022 Semester 2 2021</a></p>
+<p><strong>Personal Customer Relation Management (PCRM)</strong> project development.</p>
+<hr>
+<h2 class="mume-header" id="deployment-access-link-and-working-branches">Deployment Access Link and Working Branches</h2>
+
+<table>
+<thead>
+<tr>
+<th>Server</th>
+<th>Working Branch</th>
+<th>Deployment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Back-End</td>
+<td><a href="https://bit.ly/3urzPG9">https://bit.ly/3urzPG9</a></td>
+<td><a href="https://crm4399.herokuapp.com/">https://crm4399.herokuapp.com/</a></td>
+</tr>
+<tr>
+<td>Front-End</td>
+<td><a href="https://bit.ly/3imk1zI">https://bit.ly/3imk1zI</a></td>
+<td><a href="http://www.4399crm.com">http://www.4399crm.com</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Please view front end with screen size 375 x 875px (iPhoneX screen size)</strong></p>
+<hr>
+<p><img src="https://icons-for-free.com/iconfiles/png/512/notion-1324440204874385945.png" width="2.3%" align="left"> For progress tracking &amp; view notes, please accesss via <a href="https://www.notion.so/huangsunchuangyu/COMP30022-IT-Project-e0687c4d6a7b4ee18d164b25c9bc93d8">notion</a>.</p>
+<p>&#x1F4E9; Contacts of tutor: <a href="mailto:t.bowes@unimelb.edu.au">t.bowes@unimelb.edu.au</a></p>
+<p>&#x1F4E7; Contacts of client: <a href="mailto:aponiatowski@student.unimelb.edu.au">aponiatowski@student.unimelb.edu.au</a></p>
+<hr>
+<h2 class="mume-header" id="table-of-content">Table of Content</h2>
+
+<ul>
+<li><a href="#-comp30022-group-project-team-4399">COMP30022 Group Project Team 4399</a></li>
+<li><a href="#team-members">Team members</a></li>
+<li><a href="#javascript-api-documentation">Javascript Documentation</a></li>
+<li><a href="#software-dependencies">Software Dependencies</a></li>
+<li><a href="#built-with">Built with</a></li>
+<li><a href="#directories">Directories</a></li>
+<li><a href="#quick-start-guide">Quick Start Guide</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<hr>
+<h2 class="mume-header" id="team-members">Team members</h2>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Role</th>
+<th style="text-align:left">Contact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Bin Liang</td>
+<td style="text-align:left">Back End Leader</td>
+<td style="text-align:left"><a href="mailto:blliang@student.unimelb.edu.au">blliang@student.unimelb.edu.au</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Hongji Huang</td>
+<td style="text-align:left">Communication Leader</td>
+<td style="text-align:left"><a href="mailto:hohuang@student.unimelb.edu.au">hohuang@student.unimelb.edu.au</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Sunchuangyu Huang</td>
+<td style="text-align:left">Scrum Master</td>
+<td style="text-align:left"><a href="mailto:sunchuangyuh@student.unimelb.edu">sunchuangyuh@student.unimelb.edu</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Wei Zhao</td>
+<td style="text-align:left">Front End Leader</td>
+<td style="text-align:left"><a href="mailto:weizhao1@student.unimelb.edu.au">weizhao1@student.unimelb.edu.au</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Yixiao Tian</td>
+<td style="text-align:left">Communication leader</td>
+<td style="text-align:left"><a href="mailto:yixiaot@student.unimelb.edu.au">yixiaot@student.unimelb.edu.au</a></td>
+</tr>
+</tbody>
+</table>
+<h2 class="mume-header" id="javascript-api-documentation">Javascript API Documentation</h2>
+
+<ul>
+<li><a href="https://crm4399.herokuapp.com/api/contactController">Contact Controller</a></li>
+<li><a href="https://crm4399.herokuapp.com/api/profileController">Profile Controller</a></li>
+<li><a href="https://crm4399.herokuapp.com/api/recordController">Record Controller</a></li>
+<li><a href="https://crm4399.herokuapp.com/api/userController">User Controller</a></li>
+<li><a href="https://crm4399.herokuapp.com/api/emailAuth">Authentication Controller</a></li>
+</ul>
+<h2 class="mume-header" id="software-dependencies">Software Dependencies</h2>
+
+<p>For more information, please check <code>package.json</code>.</p>
+<p>For quick installation:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> <span class="token comment"># install all dependencies or</span>
+<span class="token function">npm</span> <span class="token function">install</span> --dependencies <span class="token comment"># install required dependencies only</span>
+</pre><h2 class="mume-header" id="built-with">Built With</h2>
+
+<p>Our project was built with the following technologies:</p>
+<ul>
+<li>Node.js</li>
+<li>React.js</li>
+<li>Express.js</li>
+<li>CSS</li>
+<li>HTML</li>
+<li>MongoDB</li>
+</ul>
+<h2 class="mume-header" id="directories">Directories</h2>
+
+<ul>
+<li><code>__test__</code>: store jest API backend testing functions</li>
+<li><code>config</code>: store application session authentication functions</li>
+<li><code>controller</code>: store controllers for each accessible routes</li>
+<li><code>models</code>: store database connection script and database schemas</li>
+<li><code>public</code>: store html fragments</li>
+<li><code>routes</code>: store server accessible routes</li>
+<li><code>views</code>: handlebar views (none-use)</li>
+<li><code>out</code>: store javascript doc</li>
+</ul>
+<h2 class="mume-header" id="quick-start-guide">Quick Start Guide</h2>
+
+<p>Before start development or testing, please make sure all required dependencies have been installed.</p>
+<p>For convenience purpose, please use <code>nodemon</code> instead of <code>node</code>.</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash">nodemon app.js
+</pre><p><strong>TESTING</strong></p>
+<p>For backend function testing, using POSTMAN to test the backend routes and relevant API functions.</p>
+<p>Check POSTMAN testing instruction <a href="https://docs.google.com/document/d/1scp54-mT29K6mYz5KajW095xjlhTU-73p0TnbOa5hmU/edit#">here</a></p>
+<p><a href="https://drive.google.com/file/d/1MN0yOcuoQaosnn4B1lC_HAvFVgCMHaV8/view?usp=sharing">Download</a> POSTMAN testing JSON</p>
+<p>For built-in JEST function testing, use <code>npm test</code>.</p>
+<h2 class="mume-header" id="license">License</h2>
+
+<p>See more information, click <a href="https://github.com/Harrison-Huang666/COMP30022-49/blob/main/LICENSE">here</a></p>
+<p><strong>The University of Melbourne</strong></p>
+<h1 class="mume-header" id="comp30019-graphics-and-interaction">COMP30019 &#x2013; Graphics and Interaction</h1>
+
+<p>Final Electronic Submission (project): <strong>4pm, November 1</strong></p>
+<p>Do not forget <strong>One member</strong> of your group must submit a text file to the LMS (Canvas) by the due date which includes the commit ID of your final submission.</p>
+<p>You can add a link to your Gameplay Video here but you must have already submit it by <strong>4pm, October 17</strong></p>
+<h1 class="mume-header" id="project-2-readme">Project-2 README</h1>
+
+<p>You must modify this <code>README.md</code> that describes your application, specifically what it does, how to use it, and how you evaluated and improved it.</p>
+<p>Remember that <em>&quot;this document&quot;</em> should be <code>well written</code> and formatted <strong>appropriately</strong>. This is just an example of different formating tools available for you. For help with the format you can find a guide <a href="https://docs.github.com/en/github/writing-on-github">here</a>.</p>
+<p><strong>Get ready to complete all the tasks:</strong></p>
+<ul>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" checked> Read the handout for Project-2 carefully.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox"> Brief explanation of the game.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox"> How to use it (especially the user interface aspects).</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox"> How you designed objects and entities.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox"> How you handled the graphics pipeline and camera motion.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox"> The procedural generation technique and/or algorithm used, including a high level description of the implementation details.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox"> Descriptions of how the custom shaders work (and which two should be marked).</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox"> A description of the particle system you wish to be marked and how to locate it in your Unity project.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox"> Description of the querying and observational methods used, including a description of the participants (how many, demographics), description of the methodology (which techniques did you use, what did you have participants do, how did you record the data), and feedback gathered.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox"> Document the changes made to your game based on the information collected during the evaluation.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox"> References and external resources that you used.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox"> A description of the contributions made by each member of the group.</p>
+</li>
+</ul>
+<h2 class="mume-header" id="table-of-contents">Table of contents</h2>
+
+<ul>
+<li><a href="#team-members">Team Members</a></li>
+<li><a href="#explanation-of-the-game">Explanation of the game</a></li>
+<li><a href="#technologies">Technologies</a></li>
+<li><a href="#using-images">Using Images</a></li>
+<li><a href="#code-snippets">Code Snipets </a></li>
+</ul>
+<h2 class="mume-header" id="team-members-1">Team Members</h2>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:center">Task</th>
+<th style="text-align:right">State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Hongji Huang</td>
+<td style="text-align:center"></td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td style="text-align:left">Wei Zhao</td>
+<td style="text-align:center"></td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td style="text-align:left">Zhejun Lyu</td>
+<td style="text-align:center"></td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td style="text-align:left">Dian Lin</td>
+<td style="text-align:center"></td>
+<td style="text-align:right"></td>
+</tr>
+</tbody>
+</table>
+<h2 class="mume-header" id="explanation-of-the-game">Explanation of the game</h2>
+
+<p>Our game is a first person shooter (FPS) that....</p>
+<p>You can use emojis &#x1F44D; but do not over use it, we are looking for professional work. If you would not add them in your job, do not use them here! :shipit:</p>
+<h2 class="mume-header" id="technologies">Technologies</h2>
+
+<p>Project is created with:</p>
+<ul>
+<li>Unity 2021.1.13f1</li>
+<li>Ipsum version: 2.33</li>
+<li>Ament library version: 999</li>
+</ul>
+<h2 class="mume-header" id="using-images">Using Images</h2>
+
+<p>You can use images/gif by adding them to a folder in your repo:</p>
+<p align="center">
+  <img src="Gifs/Q1-1.gif" width="300">
+</p>
+<p>To create a gif from a video you can follow this <a href="https://ezgif.com/video-to-gif/ezgif-6-55f4b3b086d4.mov">link</a>.</p>
+<h2 class="mume-header" id="code-snippets">Code Snippets</h2>
+
+<p>You can include a code snippet here, but make sure to explain it!<br>
+Do not just copy all your code, only explain the important parts.</p>
+<pre data-role="codeBlock" data-info="c#" class="language-c#"><code>public class firstPersonController : MonoBehaviour
+{
+    //This function run once when Unity is in Play
+     void Start ()
+    {
+      standMotion();
+    }
+}
+</code></pre></div>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
