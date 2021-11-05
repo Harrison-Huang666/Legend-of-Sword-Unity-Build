@@ -539,33 +539,6 @@ This is the list of particle effects used in the game
 * Ament library version: 999
 
 
-## Task Checklist:
-
-- [x] Read the handout for Project-2 carefully.
-
-- [x] Brief explanation of the game.
-
-- [x] How to use it (especially the user interface aspects).
-
-- [ ] How you designed objects and entities.
-
-- [x] How you handled the graphics pipeline and camera motion.
-
-- [x] The procedural generation technique and/or algorithm used, including a high level description of the implementation details.
-
-- [x] Descriptions of how the custom shaders work (and which two should be marked).
-
-- [x] A description of the particle system you wish to be marked and how to locate it in your Unity project.
-
-- [x] Description of the querying and observational methods used, including a description of the participants (how many, demographics), description of the methodology (which techniques did you use, what did you have participants do, how did you record the data), and feedback gathered.
-
-- [x] Document the changes made to your game based on the information collected during the evaluation.
-
-- [x] References and external resources that you used.
-
-- [ ] A description of the contributions made by each member of the group.
-
-
 
 
 
