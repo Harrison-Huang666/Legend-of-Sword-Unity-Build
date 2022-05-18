@@ -1,1 +1,1 @@
-COMP30019.7z filter=lfs diff=lfs merge=lfs -text
+COMP30019.zip filter=lfs diff=lfs merge=lfs -text
