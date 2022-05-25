@@ -9,16 +9,17 @@
 
 
 # COMP30019 Group Project 2 Team 06
-This repository is created for [University of Melbourne](https://www.unimelb.edu.au)
- [COMP30019 Graphics and Interaction Semester 2 2021](https://handbook.unimelb.edu.au/search) 
+This repository is created for [University of Melbourne, ](https://www.unimelb.edu.au)
+ [COMP30019 Graphics and Interaction Semester 2 2021](https://handbook.unimelb.edu.au/2022/subjects/comp30019) 
 
 **Unity 3D Game Development** 
 
-
 ---
 
-<img src="https://icons-for-free.com/iconfiles/png/512/notion-1324440204874385945.png" width=5% align=left>View our Project Management notes via. [notion](https://www.notion.so/COMP30019-3D-Game-5321bede7e8c41ddb5d76160b8e4b7b4).
-
+## Code Access Link and Master Branches
+ |Master Branch | Download  |
+| ---- | ---- |
+ |https://bit.ly/3nnP5AX | https://bit.ly/3EteNej |
 
 ---
 
@@ -41,8 +42,8 @@ This repository is created for [University of Melbourne](https://www.unimelb.edu
 
 ## Team Members
 
-| Name | Email | Key Contributions
-| :---- | :---- | :---- | 
+| Name | Email |
+| :---- | :---- |
 | Dian Lin | dilin@student.unimelb.edu.au | 
 | Hongji Huang | hohuang@student.unimelb.edu.au |
 | Wei Zhao | weizhao1@student.unimelb.edu.au |
@@ -93,31 +94,59 @@ The overall game structure of Elemental Arenas guarded by Beasts stemmed from ou
 
 Additional Details of Character and Object design highlights are as follows:
 
-- **Protagonist**: Our protagonist is a knight 
-- **Enemies**:
-  - **Low-Level Enemies**: 
-   - **Slimes**: One of the most basic enemies in the game, and of course one of the most budget ones becaue it is a free and common asset on the asset store. It has two basic attack animation which are pridictable on their own and its appearance is not intimidating, therefore, it fits our expection of a early game enemy perfectly.
-   - **Turtles**: Similar to Slimes, due to the fact that they are included in the same free asset pack and its animation and appearance are all newbie-friendly as well, we design it as one of the early game enemies. 
-   - **Grunts**: Grunts are relatively strong enemies but not as strong as the elite ones and the bosses. It has more complicated attack and movement abilities but the player can still manage to beat it if the player can properlyu utilise the roll dodge. This is a great enemy for teaching player about the core mechanics of the combat system in the game.
-   - **Elite Enemies**: There many more difficult enemies (with better rewards of course) in the world, including Archer, Knight, Mage, Soldier, etc. And they all have advanced versions of them (with scarlet skins!). These dangerous enemies are often guarding for powerful weapons or items. Make sure your character is strong enough before challenging them!
+> ## **Protagonist**: 
+   ### **Knight**: 
+   <img src="/Gifs/Protagonist.png" height="150"/>
 
-  - **High-Level Bosses (Elemental Beasts)**:
-    - **Fiery Fiend**: The volcano has been simmering for as long as the Fiery Fiend has been alive, an angry Beast that thrives off heaven's charcoal with its rumbling anger so loud that anyone nearing the Fire Arena immediately flees for their lives on horseback. Fuelled by the rolling rage of Fire, the Fiery Fiend is in a constant state of fury and ready to burn anything or anyone that dares to come close. 
+> ## **Low-Level Enemies**:
+   ### **Slimes**: 
+   <img src="/Gifs/Slime.png" height="150"/>
+   One of the most basic enemies in the game, and of course one of the most budget ones becaue it is a free and common asset on the asset store. It has two basic attack animation which are pridictable on their own and its appearance is not intimidating, therefore, it fits our expection of a early game enemy perfectly.
 
-    - **Glacier Giant**: Soulless. Colorless. A world of white births and nurtures the Glacier Giant. The seas are frozen mid-wave, the rains are frozen mid-drop, only a handful of greenery is allowed the chance of life by the Glacier Giant. Powered by the ever-present cold that commoners see as their nemesis, the Glacier Giant unhesitantly freezes any earthly matter that enters its biome. 
+   ### **Turtles**: 
+   <img src="/Gifs/Turtle.png" height="150"/>
+   Similar to Slimes, due to the fact that they are included in the same free asset pack and its animation and appearance are all newbie-friendly as well, we design it as one of the early game enemies. 
+   
+   ### **Grunts**: 
+   <img src="/Gifs/Grunt.png" height="150"/>
+   Grunts are relatively strong enemies but not as strong as the elite ones and the bosses. It has more complicated attack and movement abilities but the player can still manage to beat it if the player can properlyu utilise the roll dodge. This is a great enemy for teaching player about the core mechanics of the combat system in the game.
+   
+   ### **Elite Enemies**: 
+   <img src="/Gifs/Archer.png" height="150"/><img src="/Gifs/Cannon.png" height="150"/><img src="/Gifs/Cannon1.png" height="150"/><img src="/Gifs/Knight.png" height="150"/><img src="/Gifs/Knight1.png" height="150"/><img src="/Gifs/Mage.png" height="150"/><img src="/Gifs/Mage1.png" height="150"/><img src="/Gifs/Soldier.png" height="150"/><img src="/Gifs/Soldier1.png" height="150"/>
+   
+   There many more difficult enemies (with better rewards of course) in the world, including Archer, Knight, Mage, Soldier, etc. And they all have advanced versions of them (with scarlet skins!). These dangerous enemies are often guarding for powerful weapons or items. Make sure your character is strong enough before challenging them!  
+<br/><br/>
 
-    - **Tree Titan**: Superficially harmless, even a calming bliss on the surface, is the forest biome ruled by the Tree Titan. The ever-giving nature of this biome gifted the Tree Titan with incredible vitality and endless lifecycles. Do not be fooled by the disguise of Tree Titan and the forest biome, the player must defeat it for the valuable power-up of Health Regeneration.
+> ## **High-Level Bosses (Elemental Beasts)**:
+   ### **Fiery Fiend**: 
+   <img src="/Gifs/Fire.png" width="250"/>
+   The volcano has been simmering for as long as the Fiery Fiend has been alive, an angry Beast that thrives off heaven's charcoal with its rumbling anger so loud that anyone nearing the Fire Arena immediately flees for their lives on horseback. Fuelled by the rolling rage of Fire, the Fiery Fiend is in a constant state of fury and ready to burn anything or anyone that dares to come close. 
 
-    - **Stone Savage**: Stone biome speaks of permanence, of the tombstone of countless souls that died in their hopes of defeating the Stone Savage. Protected by an unbreakable layer of stones, the Savage Beast is seemingly impossible to defeat with its power of reflecting the damage back to its opponents. Only the brave has a chance against such a mighty being.
+  ### **Glacier Giant**:
+  <img src="/Gifs/Ice.png" width="250"/>
+  Soulless. Colorless. A world of white births and nurtures the Glacier Giant. The seas are frozen mid-wave, the rains are frozen mid-drop, only a handful of greenery is allowed the chance of life by the Glacier Giant. Powered by the ever-present cold that commoners see as their nemesis, the Glacier Giant unhesitantly freezes any earthly matter that enters its biome. 
 
-- **Supplies**: There are consumables for temporal restoration of the character status, such as health packs and energy drinks. There are also consumables that can permenantly improve the character status, such as essence that drops from the defeated enemies. The more difficult an enemy is, the better the consubales it would probably drop after it is defeat. We design these items as minor objectives and rewards for the player to explore the world. 
+  ### **Tree Titan**:
+  <img src="/Gifs/Tree.png" width="250"/>
+  Superficially harmless, even a calming bliss on the surface, is the forest biome ruled by the Tree Titan. The ever-giving nature of this biome gifted the Tree Titan with incredible vitality and endless lifecycles. Do not be fooled by the disguise of Tree Titan and the forest biome, the player must defeat it for the valuable power-up of Health Regeneration.
 
-- **Weapons**:
+  ### **Stone Savage**:
+  <img src="/Gifs/Stone.png" width="250"/>
+  Stone biome speaks of permanence, of the tombstone of countless souls that died in their hopes of defeating the Stone Savage. Protected by an unbreakable layer of stones, the Savage Beast is seemingly impossible to defeat with its power of reflecting the damage back to its opponents. Only the brave has a chance against such a mighty being.
+<br/><br/>  
+
+> ## **Supplies**:
+There are consumables for temporal restoration of the character status, such as health packs and energy drinks. There are also consumables that can permenantly improve the character status, such as essence that drops from the defeated enemies. The more difficult an enemy is, the better the consubales it would probably drop after it is defeat. We design these items as minor objectives and rewards for the player to explore the world. 
+<br/><br/>  
+
+> ## **Weapon**:
   - **Weapon Features**: For a myriad of game experiences, we imeplemented a wide range of weapon options each with distinct features in the dimensions of attacking form, attack range, cool-down time, critical hit and damage levels etc.
 
   - **Long-Distance Weapon**: We want the player to be able to easily perform long-distance attacks like an archer, so we added Long-Distance Weapons that can fire projectiles. Projectiles will track an enemy within its attack range and apply relevant damage to the enemy. If the enemy is located outside of the attack range, the projectiles will shoot in the direction at which it is fired towards.   
+<br/><br/>  
 
-- **Quick Access Bar**: We understand that opening backpack -> retrieving supplies -> using supplies is quite a long process during fast-paced combats against enemies, therefore we designed a Quick Access Bar that stores supplies and can be accessed with number keys 1-5 for the convenience of players at crucial combatting moments throughout the game.
+> ## **Quick Access Bar**:
+We understand that opening backpack -> retrieving supplies -> using supplies is quite a long process during fast-paced combats against enemies, therefore we designed a Quick Access Bar that stores supplies and can be accessed with number keys 1-5 for the convenience of players at crucial combatting moments throughout the game.
 
 
 ## Graphics Render Pipeline And Camera Motion
@@ -537,6 +566,33 @@ This is the list of particle effects used in the game
 * Unity 2021.1.13f1
 * Ipsum version: 2.33
 * Ament library version: 999
+
+
+## Task Checklist:
+
+- [x] Read the handout for Project-2 carefully.
+
+- [x] Brief explanation of the game.
+
+- [x] How to use it (especially the user interface aspects).
+
+- [ ] How you designed objects and entities.
+
+- [x] How you handled the graphics pipeline and camera motion.
+
+- [x] The procedural generation technique and/or algorithm used, including a high level description of the implementation details.
+
+- [x] Descriptions of how the custom shaders work (and which two should be marked).
+
+- [x] A description of the particle system you wish to be marked and how to locate it in your Unity project.
+
+- [x] Description of the querying and observational methods used, including a description of the participants (how many, demographics), description of the methodology (which techniques did you use, what did you have participants do, how did you record the data), and feedback gathered.
+
+- [x] Document the changes made to your game based on the information collected during the evaluation.
+
+- [x] References and external resources that you used.
+
+- [ ] A description of the contributions made by each member of the group.
 
 
 
